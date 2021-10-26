@@ -1,5 +1,7 @@
 <header>
-
+    <nav class="uppernav">
+        
+    </nav>
     <nav class="my-view">
         <ul class="header-list">
             <li id="dc-logo">
@@ -10,6 +12,7 @@
                     <a href="{{route($link['route'])}}">{{$link['text']}}</a>
                 </li>
             @endforeach
+            
             <!-- <li>
                 <a href="{{route('characters')}}">characters</a>
             </li>
@@ -18,6 +21,7 @@
             </li> -->
 
         </ul>
+        <input type="text" placeholder="Search">
     </nav>
    
 </header>

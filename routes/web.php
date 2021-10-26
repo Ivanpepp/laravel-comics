@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('comics', ['banners' => $banners]);
 })->name('comics');
 
+Route::get('/comic', function () {
+    $banners = config('comic');
+    return view('comic');
+})->name('comic');
 
 Route::get('/characters', function () {
     return view('characters');

@@ -13,23 +13,43 @@ body {
   margin: 0 auto;
 }
 
+header .uppernav {
+  background-color: #0282f9;
+  color: white;
+  height: 20px;
+}
 header nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
   font-size: 1.3rem;
+}
+header nav input {
+  text-align: right;
+  margin-left: 50px;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-bottom: 2px solid #0282f9;
+}
+header nav input:focus {
+  color: #0282f9;
 }
 header #dc-logo:hover {
   border-bottom: 6px solid transparent;
 }
 header #dc-logo img {
   vertical-align: middle;
+  margin-right: 30px;
+  width: 80px;
 }
 header .header-list {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   list-style: none;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  line-height: 120px;
+  line-height: 100px;
 }
 header .header-list li {
   border-bottom: 6px solid transparent;
@@ -109,5 +129,52 @@ footer {
      object-fit: cover;
 }
 #comics .btn-wrapper {
+  text-align: center;
+}
+
+#comic .jumbo-wrapper .main-jumbo {
+  height: 350px;
+}
+#comic .jumbo-wrapper .main-jumbo img {
+  height: 100%;
+  width: 100%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#comic .jumbo-wrapper .blue-line {
+  background-color: #0282f9;
+  height: 80px;
+}
+#comic .jumbo-wrapper .my-view .my-view2 {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+#comic .jumbo-wrapper .my-view .card-wrapper {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+}
+#comic .jumbo-wrapper .my-view .card-wrapper .card {
+  position: relative;
+}
+#comic .jumbo-wrapper .my-view .card-wrapper .card .sticker {
+  text-transform: uppercase;
+  padding: 5px;
+  color: white;
+  background-color: #0282f9;
+}
+#comic .jumbo-wrapper .my-view .card-wrapper .card .upper-sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#comic .jumbo-wrapper .my-view .card-wrapper .card .lower-sticker {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  width: 100%;
   text-align: center;
 }
