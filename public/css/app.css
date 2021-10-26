@@ -152,29 +152,57 @@ footer {
   margin: 0 auto;
   position: relative;
 }
-#comic .jumbo-wrapper .my-view .card-wrapper {
+#comic .jumbo-wrapper .my-view .my-view2 .card-wrapper {
   border: 1px solid white;
   position: absolute;
   bottom: 20px;
 }
-#comic .jumbo-wrapper .my-view .card-wrapper .card {
+#comic .jumbo-wrapper .my-view .my-view2 .card-wrapper .card {
   position: relative;
 }
-#comic .jumbo-wrapper .my-view .card-wrapper .card .sticker {
+#comic .jumbo-wrapper .my-view .my-view2 .card-wrapper .card .sticker {
   text-transform: uppercase;
   padding: 5px;
   color: white;
   background-color: #0282f9;
 }
-#comic .jumbo-wrapper .my-view .card-wrapper .card .upper-sticker {
+#comic .jumbo-wrapper .my-view .my-view2 .card-wrapper .card .upper-sticker {
   position: absolute;
   top: 0;
   left: 0;
 }
-#comic .jumbo-wrapper .my-view .card-wrapper .card .lower-sticker {
+#comic .jumbo-wrapper .my-view .my-view2 .card-wrapper .card .lower-sticker {
   position: absolute;
   bottom: 0;
   padding: 5px;
   width: 100%;
   text-align: center;
+}
+#comic .jumbo-wrapper .my-view #description-section {
+  padding-top: 40px;
+}
+#comic .jumbo-wrapper .my-view #description-section .adv {
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#comic .jumbo-wrapper .my-view #description-section .description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#comic .jumbo-wrapper .my-view #description-section .description-wrapper h1 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+#comic .jumbo-wrapper .my-view #description-section .description {
+  margin-right: 35px;
+}
+#comic .jumbo-wrapper .my-view #description-section .description .price-wrapper {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+#comic .jumbo-wrapper .my-view #description-section .description .price-wrapper .price .right {
+  text-align: right;
 }
