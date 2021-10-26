@@ -6,11 +6,25 @@
 @section('content')
 
 
-<div class="main-jumbo ">
-    <img src="{{asset('images/jumbotron.jpg')}}" alt="jumbo image">
-      <div class="my-view">
-        <button class="btn-primary">current series</button>
+<div id="comics">
+    <div class="main-jumbo ">
+      <img src="{{asset('images/jumbotron.jpg')}}" alt="jumbo image">
+        <div class="my-view">
+          <button class="btn-primary">current series</button>
+        </div>
+    </div>
+    <div class="card-wrapper my-view">
+      @foreach ($banners as $banner)
+      <div class="comics-card">
+        <img src="{{$banner['thumb']}}" alt="{{$banner['series']}}">
+        <p>{{$banner['series']}}</p>
       </div>
+      @endforeach
+    </div>
+    <div class="btn-wrapper">
+      <button class="btn-primary">load more</button>
+    </div>
+   
 </div>
 
 

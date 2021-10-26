@@ -55,28 +55,59 @@ footer {
   margin: 50px;
 }
 
-.main-jumbo {
-  /* background-image: url('../../../public/images/jumbotron.jpg'); */
-  height: 600px;
-  /* background-size: cover; */
-  position: relative;
+#comics {
+  background-color: #303030;
+  color: white;
+  padding-bottom: 20px;
 }
-.main-jumbo img {
-  height: 100%;
-  width: 100%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.main-jumbo .btn-primary {
+#comics .btn-primary {
   padding: 10px 20px;
   background-color: #0282f9;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4rem;
   border: none;
+}
+#comics .main-jumbo {
+  /* background-image: url('../../../public/images/jumbotron.jpg'); */
+  height: 350px;
+  /* background-size: cover; */
+  position: relative;
+}
+#comics .main-jumbo img {
+  height: 100%;
+  width: 100%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#comics .main-jumbo .btn-primary {
+  font-size: 1.4rem;
   position: absolute;
   bottom: -20px;
+}
+#comics .card-wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#comics .card-wrapper .comics-card {
+  margin: 0 10px 30px 10px;
+  flex-basis: calc(16.6666666667% - 20px);
+}
+#comics .card-wrapper .comics-card p {
+  text-transform: uppercase;
+}
+#comics .card-wrapper .comics-card img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 200px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#comics .btn-wrapper {
+  text-align: center;
 }

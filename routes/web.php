@@ -13,19 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    $banners = config('comics');
+    return view('comics', ['banners' => $banners]);
+})->name('comics');
 
 
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-Route::get('/', function () {
-    return view('comics');
-})->name('comics');
-
-Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
 
 Route::get('/movies', function () {
     return view('movies');

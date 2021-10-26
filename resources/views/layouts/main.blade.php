@@ -10,6 +10,7 @@
 </head>
 <body>
         @include('partials.header', ['links' => config('header_main_menu')])
+       
         <main>
             @yield('content')
         </main>
