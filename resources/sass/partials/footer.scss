@@ -1,3 +1,57 @@
 footer{
-    margin: 50px;
+    background-image: url('../images/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+    height: 500px;
+    overflow: hidden;
+    .flex{
+        display: flex;
+        
+        .container{
+            margin-right: 50px;
+        }
+    }
+    ul{
+        list-style: none;
+        margin-bottom: 20px;
+        h2{
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(150, 150, 150);
+           text-transform: capitalize;
+           line-height: 25px;
+            
+        }
+        .active{
+            font-weight: bold;
+            color: $primaryColor;
+        }
+    }
+    figure{
+        
+     
+        img{
+            
+            position: absolute;
+            top: -90px;
+            right:10%;
+            width: 800px;
+            
+
+            
+        }
+    }
+    p{
+        color: white;
+       
+        
+    }
+    
+   
 }

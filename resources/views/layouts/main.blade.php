@@ -14,7 +14,7 @@
         <main>
             @yield('content')
         </main>
-        @include('partials.footer')
+        @include('partials.footer', ['links' => config('header_main_menu')])
         <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

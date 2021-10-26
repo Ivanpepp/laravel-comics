@@ -6,6 +6,8 @@
 
 body {
   font-family: "Gemunu Libre";
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .my-view {
@@ -72,7 +74,47 @@ header .header-list li:hover {
 }
 
 footer {
-  margin: 50px;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0;
+  height: 500px;
+  overflow: hidden;
+}
+footer .flex {
+  display: flex;
+}
+footer .flex .container {
+  margin-right: 50px;
+}
+footer ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+footer ul h2 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer ul a {
+  text-decoration: none;
+  color: #969696;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+footer ul .active {
+  font-weight: bold;
+  color: #0282f9;
+}
+footer figure img {
+  position: absolute;
+  top: -90px;
+  right: 10%;
+  width: 800px;
+}
+footer p {
+  color: white;
 }
 
 #comics {
@@ -115,6 +157,10 @@ footer {
 #comics .card-wrapper .comics-card {
   margin: 0 10px 30px 10px;
   flex-basis: calc(16.6666666667% - 20px);
+}
+#comics .card-wrapper .comics-card a {
+  text-decoration: none;
+  color: white;
 }
 #comics .card-wrapper .comics-card p {
   text-transform: uppercase;

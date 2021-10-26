@@ -16,8 +16,10 @@
     <div class="card-wrapper my-view">
       @foreach ($banners as $banner)
       <div class="comics-card">
-        <img src="{{$banner['thumb']}}" alt="{{$banner['series']}}">
-        <p>{{$banner['series']}}</p>
+        <a href="{{route('comic', ['id' => $loop->index])}}">
+          <img src="{{$banner['thumb']}}" alt="{{$banner['series']}}">
+          <p>{{$banner['series']}}</p>
+        </a>
       </div>
       @endforeach
     </div>
