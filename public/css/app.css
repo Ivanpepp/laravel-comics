@@ -117,6 +117,38 @@ footer p {
   color: white;
 }
 
+#lowerfooter {
+  background-color: #303030;
+  padding: 20px 0;
+}
+#lowerfooter .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lowerfooter .flex button {
+  padding: 10px;
+  border: 2px solid #0282f9;
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+#lowerfooter .flex .social-wrapper {
+  display: flex;
+  align-items: center;
+}
+#lowerfooter .flex .social-wrapper span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #0282f9;
+  font-weight: bold;
+}
+#lowerfooter .flex .social-wrapper img {
+  margin-left: 15px;
+}
+
 #comics {
   background-color: #303030;
   color: white;

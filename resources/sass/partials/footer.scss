@@ -55,3 +55,35 @@ footer{
     
    
 }
+#lowerfooter{
+  
+    background-color: $footerBgColor;
+    padding: 20px 0;
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            padding: 10px;
+            border: 2px solid $primaryColor;
+            background-color: transparent;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+        }
+        .social-wrapper{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: $primaryColor;
+                font-weight: bold;
+            }
+            img{
+                margin-left: 15px;
+            }
+        }
+    }
+}

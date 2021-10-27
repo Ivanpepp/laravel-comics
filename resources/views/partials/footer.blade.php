@@ -63,3 +63,20 @@
    
    
 </footer>
+<section id="lowerfooter">
+   <div class="my-view">
+        <div class="flex">
+            <button class="button">sign-up now!</button>
+            <div class="social-wrapper">
+                <span>Follow us </span>
+                <img src="{{asset('images/footer-facebook.png')}}" alt="">
+                <img src="{{asset('images/footer-twitter.png')}}" alt="">
+                <img src="{{asset('images/footer-youtube.png')}}" alt="">
+                <img src="{{asset('images/footer-pinterest.png')}}" alt="">
+                <img src="{{asset('images/footer-periscope.png')}}" alt="">
+            </div>
+           
+         
+        </div>
+   </div>
+</section>
